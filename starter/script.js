@@ -122,24 +122,22 @@ var specialCharacters = [
     }
     
   
-    // if statement - looks to see if any of the 'wantUpper' 'wantNumber' etc are true. if so it will add the full character set to the passwordOptions. it does this by =+ 'upperCaseCharacters' etc
-    // passwordOptions makes password
-    // Something here isnt working!!
-    let passwordOptions = '';
+    // if statement - looks to see if any of the 'wantUpper' 'wantNumber' etc are true. if so it will add the full character set to the passwordOptions. 
+    // used a spread operator (...) here to put the array into a new array where the pool of characters are selected at random instead of a string. Without the spread operator the special characters were being placed inside the password even when it wasnt selected 
+
+    let passwordOptions = [];
     if (wantUpper) {
-      passwordOptions += upperCasedCharacters;
+      passwordOptions = [...passwordOptions, ...upperCasedCharacters];
     }
     if (wantLower) {
-      passwordOptions += lowerCasedCharacters;
+      passwordOptions = [...passwordOptions, ...lowerCasedCharacters];
     }
     if (wantNumber) {
-      passwordOptions += numericCharacters;
+      passwordOptions = [...passwordOptions, ...numericCharacters];
     }
     if (wantSpecials) {
-      passwordOptions += specialCharacters;
+      passwordOptions = [...passwordOptions, ...specialCharacters];
     }
-    
-  
   
     // password variable is an array placeholder for user generated amount of length
     let generatedPassword = [];
