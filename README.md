@@ -1,26 +1,21 @@
 # Create a Password Generator 
 
 ## Description
+The Password Generator is a web application that allows an employee to generate a random password based on criteria they have selected. The application presents a series of prompts for password criteria such as length of password (at least 10 characters but no more than 64), and character types (lowercase, uppercase, numeric, special characters). Once the prompts are answered, the password is generated and displayed in an alert or written to the page. The user interface is designed to be clean, polished, and responsive, adapting to multiple screen sizes. The application was created using JavaScript and is available to view through a deployed page link. To run the application, users can clone the repository and open the index.html file in their browser.
 
-
-I have been tasked with creating a password generator, that an employee can use to generate a random password based on criteria they've selected. This password generator needs to hit certain criteria, these are as followed;
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 10 characters but no more than 64.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
-
-* The user interface needs to be clean,polished and responsive
-* The web application needs to adapt to multiple screen sizes.
+## Features 
+* Generate password button
+* Prompt for password length (10 to 64 characters)
+* Prompt for character type selection (lowercase, uppercase, numeric, special characters)
+* Display generated password in an alert or on the page
+* Clean and polished user interface
+* Responsive design for multiple screen sizes
+* Deployed site accessible through URL
+* Repository available for cloning and local installation.
 
 ## Technologies Used
 This project was created using 
-*JavaScript
+* JavaScript
 
 
 ## Screenshot
@@ -31,6 +26,13 @@ Once deployed you can see the web application in your browser. It should look li
 ## Deployed Page
 Link to the deployed site
 https://jessie93.github.io/Password-Generator/
+
+## Installation
+
+To run the application, follow these steps:
+
+* Clone the repository using the command git clone git@github.com:Jessie93/Password-Generator.git
+* Open the index.html file in your browser to view the application.
 
 
 ## License 
